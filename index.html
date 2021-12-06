@@ -68,18 +68,34 @@
 		</main>
 		
 		<!-- Modal -->
-		<div class="modal fade" id="streamModal" tabindex="-1" aria-labelledby="streamModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal fade pce" id="streamModal" tabindex="-1" aria-labelledby="streamModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="streamModalLabel">Teste</h5>
 						<button type="button" class="btnclose" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
 					</div>
 					<div class="modal-body">
+						<!-- Enter button -->
 						<div id="enter" hidden>
 							<div class="container">
 								<h3 class="text-white h4 text-center mb-4">Download our demo and enjoy a piece of the Metaverse we´re building to you.</h3>
 								<div class="row text-center">
+									<!-- AppStore e PlayStore MOBILE VERSION (first) -->
+									<div id="mob" hidden>
+										<div class="row text-center">
+											<div class="col">
+												<span class="sdw"><img src="imagens/appstoresmall.png"></span>
+												<p class="pws">AppStore</p>
+												<p class="pw color2">Coming soon..</p>
+											</div>
+											<div class="col">
+												<span class="sdw"><img src="imagens/playsmall.png"></span>
+												<p class="pws">PlayStore</p>
+												<p class="pw color2">Coming soon..</p>
+											</div>
+										</div>
+									</div>
 									<div class="col">
 										<a href="#">
 											<div class="colcs">
@@ -100,16 +116,19 @@
 										<p class="pw color2">Coming soon..</p>
 									</div>
 								</div>
-								<div class="row text-center">
-									<div class="col-4">
-										<span class="sdw"><img src="imagens/appstoresmall.png"></span>
-										<p class="pws">AppStore</p>
-										<p class="pw color2">Coming soon..</p>
-									</div>
-									<div class="col-4">
-										<span class="sdw"><img src="imagens/playsmall.png"></span>
-										<p class="pws">PlayStore</p>
-										<p class="pw color2">Coming soon..</p>
+								<!-- AppStore e PlayStore PC VERSION -->
+								<div id="pce" hidden>
+									<div class="row text-center">
+										<div class="col-4">
+											<span class="sdw"><img src="imagens/appstoresmall.png"></span>
+											<p class="pws">AppStore</p>
+											<p class="pw color2">Coming soon..</p>
+										</div>
+										<div class="col-4">
+											<span class="sdw"><img src="imagens/playsmall.png"></span>
+											<p class="pws">PlayStore</p>
+											<p class="pw color2">Coming soon..</p>
+										</div>
 									</div>
 								</div>
 							</div>
