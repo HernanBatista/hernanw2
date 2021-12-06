@@ -18,6 +18,8 @@ body{
     height: 100vh;
 }
 
+a{text-decoration: none!important;}
+
 .vh98{
 	height: 98vh;
 }
@@ -46,12 +48,57 @@ body{
 	transform: scaleX(-1);
 }
 
-p:hover{
+.but1 p:hover{
 	letter-spacing: 7px;
     transition: 1s;
     color: #f9f104;
 }
 p{transition: 1s;}
+
+.w25{
+	width: 25%;
+}
+
+.sdw{
+	font-size: 60px;
+}
+
+.color1{
+	color: #00A4EF;
+}
+.color2{
+	color: #818181;
+}
+
+.pw{
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.pws{
+    margin-bottom: 0px;
+    font-size: 17px;
+    color: #d3d3d3;
+}
+
+.colcs{
+	transition:1s;
+}
+
+.colcs:hover{
+	background: #2a2a2a;
+    border-radius: 10px;
+	transition:1s;
+}
+
+.colcs:hover .pw {
+	color: #f3d506;
+	letter-spacing: 2px;
+}
+
+.colcs p {
+	color: #fff;
+}
 
 /* modal */
 
@@ -89,3 +136,76 @@ p{transition: 1s;}
 transition-delay: 0s;}
 
 /* FLIP END */
+
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030f7; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* SCROLLBAR END*/
+
+@media (min-width: 576px){
+	.modal-dialog {
+		max-width: 600px;
+	}
+}
+
+@media (max-width: 1200px){
+	.cologo{
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+}
+
+@media (max-width: 1000px){
+	.cologo{
+		flex: 0 0 48%;
+		max-width: 48%;
+	}
+}
+
+.mobile{
+	display: none;
+}
+
+.pc{
+	display: block;
+}
+
+@media (max-width: 750px){
+	.pc{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+	body{height: 111vh;}
+	.but1{
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.logomob{
+		background: url('../imagens/logo.png');
+		width: 144px;
+		height: 90px;
+		background-size: contain;
+		margin: 20px auto;
+	}
+}
